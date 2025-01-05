@@ -50,14 +50,14 @@ searchBtn.addEventListener("click", async () => {
       document.body.style.backgroundImage =
         "url('images/clouds_from_above.jpeg')";
       document.documentElement.style.height = "100%"; // Set html to 100% height
-      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.height = "95%"; // Set body to 100% height
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
       document.body.style.backgroundPosition = "center"; // Center the image
     } else if (weatherCondition.includes("rain")) {
       document.body.style.backgroundImage = "url('images/Top-rain-fall.jpg')";
       document.documentElement.style.height = "100%"; // Set html to 100% height
-      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.height = "95%"; // Set body to 100% height
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
       document.body.style.backgroundPosition = "center"; // Center the image
@@ -65,14 +65,14 @@ searchBtn.addEventListener("click", async () => {
       document.body.style.backgroundImage =
         "url('images/beautiful-sunny-day.jpg')";
       document.documentElement.style.height = "100%"; // Set html to 100% height
-      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.height = "95%"; // Set body to 100% height
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
       document.body.style.backgroundPosition = "center"; // Center the image
     } else if (weatherCondition.includes("snow")) {
       document.body.style.backgroundImage = "url('images/snow-day-pic.jpg')";
       document.documentElement.style.height = "100%"; // Set html to 100% height
-      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.height = "95%"; // Set body to 100% height
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
       document.body.style.backgroundPosition = "center"; // Center the image
