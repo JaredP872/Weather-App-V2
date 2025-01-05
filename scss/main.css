@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f9;
+  transition: background-color 0.5s, background-image 0.5s;
+}
+
+.weather-app {
+  margin-top: 50px;
+}/*# sourceMappingURL=main.css.map */
