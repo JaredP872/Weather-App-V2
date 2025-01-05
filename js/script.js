@@ -16,7 +16,7 @@ searchBtn.addEventListener("click", async () => {
   //   Construct the API URL before making any fetch calls
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
     city
-  )}&units=metric&appid=${apiKey}`;
+  )}&units=imperial&appid=${apiKey}`;
 
   //   Log the constructed URL for debugging
   console.log("Constructed URL:", url);
@@ -40,7 +40,7 @@ searchBtn.addEventListener("click", async () => {
 
     // Update weather info
     cityName.textContent = data.name;
-    temperature.textContent = `Temperature: ${data.main.temp}°C`;
+    temperature.textContent = `Temperature: ${data.main.temp}°F`;
     description.textContent = `Weather: ${data.weather[0].description}`;
 
     // Update background based on weather condition
@@ -49,15 +49,35 @@ searchBtn.addEventListener("click", async () => {
     if (weatherCondition.includes("cloud")) {
       document.body.style.backgroundImage =
         "url('images/clouds_from_above.jpeg')";
+      document.documentElement.style.height = "100%"; // Set html to 100% height
+      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
+      document.body.style.backgroundPosition = "center"; // Center the image
     } else if (weatherCondition.includes("rain")) {
       document.body.style.backgroundImage = "url('images/Top-rain-fall.jpg')";
+      document.documentElement.style.height = "100%"; // Set html to 100% height
+      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
+      document.body.style.backgroundPosition = "center"; // Center the image
     } else if (weatherCondition.includes("clear")) {
       document.body.style.backgroundImage =
         "url('images/beautiful-sunny-day.jpg')";
+      document.documentElement.style.height = "100%"; // Set html to 100% height
+      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
+      document.body.style.backgroundPosition = "center"; // Center the image
     } else if (weatherCondition.includes("snow")) {
       document.body.style.backgroundImage = "url('images/snow-day-pic.jpg')";
+      document.documentElement.style.height = "100%"; // Set html to 100% height
+      document.body.style.height = "100%"; // Set body to 100% height
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "cover"; // Scale to cover the entire page
+      document.body.style.backgroundPosition = "center"; // Center the image
     } else {
-      document.body.style.backgroundColor = "#f4f4f9";
+      document.body.style.backgroundColor = "#6D72C3";
     }
   } catch (error) {
     console.error("Error fetching weather data:", error);

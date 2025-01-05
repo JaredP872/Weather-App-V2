@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #f4f4f9;
+  background-color: #6d72c3;
   transition: background-color 0.5s, background-image 0.5s;
+  font-size: 50px;
 }
 
 .weather-app {
